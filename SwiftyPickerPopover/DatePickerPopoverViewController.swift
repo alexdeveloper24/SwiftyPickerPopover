@@ -45,7 +45,7 @@ public class DatePickerPopoverViewController: AbstractPickerPopoverViewControlle
         clearButton.tintColor = popover.clearButton.color ?? popover.tintColor
         clearButton.isHidden = popover.clearButton.action == nil
         if #available(iOS 13.4, *) {
-        picker.preferredDatePickerStyle = popover.preferredDatePickerStyle_
+            picker.preferredDatePickerStyle = .automatic
         }
         picker.date = popover.selectedDate
         picker.minimumDate = popover.minimumDate
